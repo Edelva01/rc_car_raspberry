@@ -1,0 +1,22 @@
+esc_pwm_node:
+  ros__parameters:
+    esc_gpio_pin: 18
+    min_duty_cycle: 5.0
+    max_duty_cycle: 10.0
+
+servo_pwm_node:
+  ros__parameters:
+    servo_gpio_pin: 19
+    center_duty_cycle: 7.5
+    range_duty_cycle: 2.5
+
+range_sensor_node:
+  ros__parameters:
+    frame_id: range_link
+    field_of_view: 0.261799
+
+camera_node:
+  ros__parameters:
+    width: 320
+    height: 240
+    encoding: rgb8

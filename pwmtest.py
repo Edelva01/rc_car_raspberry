@@ -5,19 +5,15 @@ import time
 try:
     import RPi.GPIO as GPIO
 except ModuleNotFoundError as exc:
-    raise SystemExit(
-        "RPi.GPIO module not found. Install it (e.g. 'pip install RPi.GPIO' or 'pip install rpi-lgpio')."
-    ) from exc
+    raise SystemExit("Install RPi.GPIO (e.g. 'pip install RPi.GPIO' or 'pip install rpi-lgpio')") from exc
 
 GPIO.setmode(GPIO.BCM)
 esc_pin = 18
 GPIO.setup(esc_pin, GPIO.OUT)
 
-# ESCs expect 50 Hz
 pwm = GPIO.PWM(esc_pin, 50)
 pwm.start(5)
 
-# Ensure the arming pulse is present as soon as the PWM starts.
 time.sleep(0.5)
 
 def set_speed(duty):
