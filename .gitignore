@@ -1,0 +1,23 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.env
+.venv
+
+# ROS 2 and colcon build artifacts
+build/
+install/
+log/
+
+# Testing
+.coverage
+pytest.cache/
+
+# IDE / editor
+.vscode/
+.idea/
