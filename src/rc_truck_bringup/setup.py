@@ -14,8 +14,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Your Name',
-    maintainer_email='todo@example.com',
+    maintainer='Edelva01',
+    maintainer_email='Edelva01@users.noreply.github.com',
     description='Bringup launch files for the RC truck.',
     license='MIT',
 )
